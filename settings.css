@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #141414;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff375b;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #ff375b;
+}
+
+/* Main Settings */
+.account-wrapper {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.account-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.account-section {
+  margin-bottom: 40px;
+}
+
+.account-section h2 {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.account-block {
+  background-color: #141414;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.account-info p {
+  margin: 5px 0;
+}
+
+.account-action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-link {
+  color: #5799ef;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.settings-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-links li {
+  border-bottom: 1px solid #333;
+  padding: 15px 0;
+}
+
+.settings-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.settings-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}

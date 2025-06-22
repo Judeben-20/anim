@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeVerse – Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">AnimeVerse</div>
+
+    <nav class="main-nav">
+      <a href="#">Home</a>
+      <a href="#">Genres</a>
+      <a href="#">Latest</a>
+      <a href="#">My List</a>
+    </nav>
+
+    <div class="nav-icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-bell"></i>
+      <div class="profile-dropdown">
+        <img
+          src="profile.png"
+          alt="Profile"
+          class="profile-icon"
+          id="profileToggle"
+        />
+        <div class="dropdown-menu" id="profileMenu">
+          <a href="settings.html">Settings</a>
+          <a href="#" id="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+      <p>Follow Tanjiro's journey in the Demon Slayer Corps as he fights to save his sister.</p>
+      <button>Watch Now</button>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="category">
+    <h2>Top Picks for You</h2>
+    <div class="anime-row">
+      <div class="anime-card"><img src="jutsu.webp" alt="Jujutsu Kaisen" /></div>
+      <div class="anime-card"><img src="naruto.webp" alt="Naruto" /></div>
+      <div class="anime-card"><img src="attack1.webp" alt="Attack on Titan" /></div>
+      <div class="anime-card"><img src="one.webp" alt="One Punch Man" /></div>
+      <div class="anime-card"><img src="d2.webp" alt="Doraemon" /></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AnimeVerse. All rights reserved.</p>
+  </footer>
+
+  
+<script>
+ 
+  const user = JSON.parse(localStorage.getItem("animeverseUser"));
+  if (!user) {
+    alert("Please log in first.");
+    window.location.href = "login.html";
+  }
+
+  
+  document.getElementById("logout").addEventListener("click", () => {
+    localStorage.removeItem("animeverseUser");
+    window.location.href = "logout.html";
+  });
+</script>
+
+  
+</body>
+</html>
